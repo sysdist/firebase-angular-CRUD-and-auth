@@ -1,0 +1,50 @@
+<div class="p-col-12 p-md-12 p-lg-12">
+<p-panel header="Welcome to Firebase CRUD and Auth project">
+  <h1 id="firebase-angular-crud-and-auth">Firebase Angular CRUD and Auth</h1>
+  <p>This is a baseline project for Firebase CRUD actions on documents (create, edit, update, delete) and authentication.
+  The firebase document is tied to the authenticated user via uid.
+  Firebase config is located in src/environments/environment.ts
+  Copy, fork, clone, modify and run! Have fun!</p>
+  <h2 id="setup">Setup</h2>
+  <p>This is an Angular app that uses Google Firebase for backend and authentication.
+  You need to setup your Node and npm before running this app. You also need a Firebase project (create one from the Firebase console).
+  Great introductory video about firebase:
+  <a href="https://www.youtube.com/watch?v=q5J5ho7YUhA" target="_blank">https://www.youtube.com/watch?v=q5J5ho7YUhA</a></p>
+  <ol>
+  <li>clone this repo</li>
+  <li>run <code>npm install</code></li>
+  <li>edit the <code>src/environments/environment.ts</code> file and add your firebase project config:<pre><code class="lang-javascript">export const environment = {{ '{' }}
+  <span class="hljs-symbol">production:</span> false,
+  <span class="hljs-symbol">firebase:</span> {{ '{' }}
+  <span class="hljs-symbol"> apiKey:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> authDomain:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> databaseURL:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> projectId:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> storageBucket:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> messagingSenderId:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> appId:</span> <span class="hljs-string">"xxx"</span>,
+  <span class="hljs-symbol"> measurementId:</span> <span class="hljs-string">"xxx"</span> 
+  {{ '}};' }}
+  </code></pre>
+  </li>
+  <li>run <code>ng serve</code> and open <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</li>
+  <li>enable your desirec types of authentication in the Firebase console</li>
+  <li>go to <code>http://localhost:4200/login</code> and auth with Google, Facebook or email account or whatever you enabled in step 5.</li>
+  <li>CRUD operations in <code>http://localhost:4200/crud</code>, create, edit, delete and view items</li>
+  <li>you can modify the interface in <code>src/app/shared/models/crud.model.ts</code> as you like</li>
+  <li>the service <code>src/app/shared/services/crud.service.ts</code> is linked to the &quot;crud&quot; collection in Firebase, modify to your desired collection</li>
+  <li>Enjoy!!!</li>
+  </ol>
+  <h2 id="code-scaffolding">Code scaffolding</h2>
+  <p>This is an Angular project so standard ng commands work.
+  Feel free to generate additional components/services and reuse the baseline code provided with this project.
+  Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+
+  <h2 id="notes">Notes</h2>
+<ul>
+<li>Authentication UI is done via package ngx-auth-firebaseui <code>https://www.npmjs.com/package/ngx-auth-firebaseui</code>. </li>
+<li>PrimeNg is used general UI <code>https://primefaces.org/primeng/showcase/#/setup</code></li>
+</ul>
+
+</p-panel>
+</div>

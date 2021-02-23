@@ -1,0 +1,13 @@
+<div class="p-col-12 p-md-12 p-lg-12">
+  <div *ngIf="item">
+    <div>
+      <p>New item</p>
+      <code>field: {{ item.field1 }}</code>
+    </div>
+    <div>
+      <input pInputText type="text" style="width: 100%;" [(ngModel)]="item.field1" />
+    </div>
+    <button pButton type="button" label="Save" (click)="save()" icon="pi pi-check" class="p-button-sm"></button>
+    <button pButton type="button" label="Back" (click)="goBack()" icon="pi pi-arrow-left" class="p-button-sm"></button>
+  </div>
+</div>
