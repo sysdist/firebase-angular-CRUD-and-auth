@@ -31,7 +31,7 @@ export const environment = {
 };
 ```
 4. run `ng serve` and open `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-5. enable your desirec types of authentication in the Firebase console
+5. enable your desired types of authentication in the Firebase console
 6. go to `http://localhost:4200/login` and auth with Google, Facebook or email account or whatever you enabled in step 5.
 7. CRUD operations in `http://localhost:4200/crud`, create, edit, delete and view items
 8. you can modify the interface in `src/app/shared/models/crud.model.ts` as you like
